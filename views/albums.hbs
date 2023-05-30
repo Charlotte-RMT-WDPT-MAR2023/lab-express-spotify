@@ -1,11 +1,14 @@
 <section class="artist-results">
-    
-    {{#each albums}}
-        <div class="individual-artist">
-            <h2 class="music-titles">{{name}}</h2>
-            <a href="/albums/{{id}}/tracks"><img src="{{images.0.url}}" onerror="this.onerror=null; this.src='/images/turntable.png' "height="200" width="200"/></a>
-            <a class="button-style" href="/albums/{{id}}/tracks">View Tracks </a>
-        </div>
-    {{/each}}   
+  {{#each albums}}
+    <article class="individual-artist">
+      <h2 class="music-titles">{{name}}</h2>
+      <a href="/albums/{{id}}/tracks">
+        <img src="{{images.0.url}}" alt="Album Cover" onerror="this.onerror=null; this.src='/images/turntable.png'  "height="200" width="200">
+      </a>
+      <br>
+      <a class="button-style" href="/albums/{{id}}/tracks">View Tracks</a>
+    </article>
+  {{/each}}
 </section>
 <a href="javascript:history.back()" class="navigation-button">Back to Artists</a>
+

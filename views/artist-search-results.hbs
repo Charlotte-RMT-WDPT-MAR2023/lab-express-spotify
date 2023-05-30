@@ -2,8 +2,10 @@
     {{#each searchedArtist}}
         <div class="individual-artist">
             <h2 class="music-titles">{{name}}</h2> 
-            <a href="/artist={{id}}/albums"><img src="{{images.0.url}}" onerror="this.onerror=null; this.src='/images/turntable.png' "height="200" width="200"/></a>
-            <a class="button-style" href="/artist={{id}}/albums">View Albums</a>
+            <a href="/artist={{id}}/albums">
+            <img src="{{images.0.url}}" onerror="this.onerror=null; this.src='/images/turntable.png' "height="200" width="200"/></a>
+            <br>
+            <a class="button-style" href="/artist={{id}}/albums">View Albums of {{name}}</a>
         </div>
     {{/each}}
     

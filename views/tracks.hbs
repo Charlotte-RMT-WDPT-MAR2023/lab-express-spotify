@@ -1,11 +1,12 @@
 <section class="album-tracks">
     {{#each tracks}}
-    <div id="individual-track">
+    <article id="individual-track">
         <h2>{{name}}</h2>
         <audio controls>
-            <source src="{{preview_url}}" type="audio/mp3">
+            <source src="{{preview_url}}" type="audio/mp3" alt="Track preview">
         </audio>
-    </div>
+    </article>
     {{/each}}
 </section>
 <a href="javascript:history.back()" class="navigation-button">Go Back to Albums</a>
+
